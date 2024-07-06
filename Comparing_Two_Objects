@@ -1,0 +1,13 @@
+public class Comparing_Objects {
+    public static void main(String [] args ){
+
+        // Constructor of double class
+        Double d = new Double(122) ;
+
+        // Constructor of Int class
+        Integer i = new Integer(122);
+
+        System.out.println(d.equals(i)) ;
+        }
+
+    }
