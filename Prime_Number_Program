@@ -1,0 +1,35 @@
+import java.util.Scanner ;
+public class Prime_numbers {
+   static  int start ;
+    static int end ;
+
+   static  boolean is_prime(int a ){
+       if(a <= 1){
+           return false ;
+       }
+        for(int j = 2 ; j<Math.sqrt(a) ;j++){
+            if(a % j == 0 ){
+                return false ;
+            }
+
+
+        }
+        return true ;
+    }
+    public static void main(String [] args){
+
+        Prime_numbers obj = new Prime_numbers();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number from where you want to find prime numbers") ;
+        start = sc.nextInt();
+        System.out.println("Enter a number to which you find prime numbers ");
+        end = sc.nextInt();
+
+       for(int i = start ; i<end; i++) {
+
+           if(obj.is_prime(i) ){
+               System.out.println(i);
+           }
+       }
+    }
+}
