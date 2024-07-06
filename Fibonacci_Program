@@ -1,0 +1,41 @@
+public class Fibonacci_Series {
+    static int n1 = 0;
+    static int n2 = 1;
+    static int n3;
+
+    void fibonacci(int count) {
+        if (count > 0) {
+            n3 = n1 + n2;
+            System.out.print(n3 + " ");
+            n1 = n2;
+            n2 = n3;
+            fibonacci(count - 1);
+        }
+        return;
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Fibonacci series");
+
+        Fibonacci_Series obj = new Fibonacci_Series();
+        System.out.println("Fibonacci series using recursion be  ");
+        int count1 = 10;
+        System.out.print(n1 + " " + n2 + " ");
+        obj.fibonacci(count1 - 2);
+        System.out.println();
+        System.out.println("Fibonacci series without recursion be ");
+        int m1 = 0;
+        int m2 = 1;
+        int m3 = 0;
+
+        System.out.print(m1 + " " + m2 + " ");
+        for (int i = 2; i < count1; i++) {
+            m3 = m1 + m2;
+            System.out.print(m3 + " ");
+            m1 = m2;
+            m2 = m3;
+        }
+    }
+}
