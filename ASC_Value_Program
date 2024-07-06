@@ -1,0 +1,9 @@
+public class ASC_Value {
+    public static void main(String [] args){
+        char c  = 'e' ;
+        int a = c ;
+        //System.out.println(c);
+        System.out.println("ASC value of char " + c+ " be " + a);
+
+    }
+}
