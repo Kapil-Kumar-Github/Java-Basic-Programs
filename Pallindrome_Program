@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Pallindrome {
+
+    static Boolean pallindrome(String a ){
+        for(int i = 0; i<a.length() ; i++){
+            if(a.charAt(i) != a.charAt(a.length()-(i+1))) {
+                return false;
+
+            }
+        }
+        return true ;
+    }
+
+
+    public static void main(String [] args){
+
+
+        String s = "1221" ;
+
+       Pallindrome obj = new Pallindrome();
+
+       if(obj.pallindrome(s)){
+           System.out.println("Pallindrome String");
+       }
+       else{
+           System.out.println("Not Pallindrome String  ");
+       }
+
+
+    }
+
+}
