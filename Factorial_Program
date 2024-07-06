@@ -1,0 +1,20 @@
+public class Factorial {
+   static int sum =1 ;
+     static int Fact(int a){
+        while(a>0){
+            sum = sum*a ;
+            a--;
+
+
+        }
+        return sum ;
+    }
+    public static void main(String [] args){
+        int c = Fact(4);
+        System.out.println("Factorial be ") ;
+       // Factorial obj = new Factorial();
+
+
+        System.out.println(c) ;
+    }
+}
